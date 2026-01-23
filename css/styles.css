@@ -17,6 +17,7 @@ a {
 
 p {
   line-height: 1.5;
+  letter-spacing: 0.02em;
 }
 
 button {
@@ -450,6 +451,10 @@ section {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.socnet-icon.footer-icon {
+  fill: #f4f4fd;
+}
+
 .footer-socnet-link:hover,
 .footer-socnet-link:focus {
   background-color: #31d0aa;
@@ -568,6 +573,7 @@ section {
   padding-top: 72px;
   padding-left: 24px;
   padding-right: 24px;
+  padding-bottom: 24px;
 }
 
 .modal-close {
@@ -715,7 +721,6 @@ section {
   height: 16px;
   border-radius: 2px;
   border: 1px solid rgba(46, 47, 66, 0.4);
-  fill: transparent;
   transition:
     border 250ms cubic-bezier(0.4, 0, 0.2, 1),
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
@@ -725,7 +730,19 @@ section {
 .modal-checkbox:checked + .checkbox-label > .custom-checkbox {
   background-color: #404bbf;
   border: 1px solid #404bbf;
+}
+
+.checkbox-icon {
+  fill: transparent;
+  opacity: 0;
+  transition:
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-checkbox:checked + .checkbox-label .checkbox-icon {
   fill: #f4f4fd;
+  opacity: 1;
 }
 
 .privacy-link {
